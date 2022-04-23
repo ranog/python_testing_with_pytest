@@ -1,8 +1,6 @@
 """Test the Task data type."""
 from collections import namedtuple
 
-import pytest
-
 Task = namedtuple(typename='Task', field_names=['summary', 'owner', 'done', 'id'])
 Task.__new__.__defaults__ = (None, None, False, None)
 
@@ -15,7 +13,6 @@ def test_defaults():
     assert task_1 == task_2
 
 
-@pytest.mark.run_these_please
 def test_member_access():
     """Check .field functionality of namedtuple."""
     task = Task(summary='buy milk', owner='Brian')

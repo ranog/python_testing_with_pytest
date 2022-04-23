@@ -2,8 +2,6 @@
 
 from collections import namedtuple
 
-import pytest
-
 Task = namedtuple(typename='Task', field_names=['summary', 'owner', 'done', 'id'])
 Task.__new__.__defaults__ = (None, None, False, None)
 
@@ -17,7 +15,6 @@ def test_asdict():
     assert task_dict == expected
 
 
-@pytest.mark.run_these_please
 def test_replace():
     """replace() should change passed in fields."""
     task_before = Task(summary='finish book', owner='Brian', done=False)
