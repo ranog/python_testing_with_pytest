@@ -1,8 +1,13 @@
 attrs==21.4.0
 iniconfig==1.1.1
+numpy==1.22.3
 packaging==21.3
+plotly==5.7.0
 pluggy==1.0.0
 py==1.11.0
 pyparsing==3.0.8
 pytest==7.1.1
+six==1.16.0
+tenacity==8.0.1
 tomli==2.0.1
+vscodedebugvisualizer==0.1.0
