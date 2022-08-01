@@ -21,7 +21,7 @@ class Card:
     summary: str = None
     owner: str = None
     state: str = "todo"
-    id: int = field(default=None, compare=False)
+    id: int = field(default=None, compare=True)  # Exercise 2 - What happens if we change compare=False to compare=True?
 
     @classmethod
     def from_dict(cls, d):
