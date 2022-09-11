@@ -17,7 +17,7 @@ def test_hello_world_using_built_in_fixtures_in_pytest(tmp_path, monkeypatch):
     print(tmp_path)
     monkeypatch.chdir(tmp_path)
     # 4. Comment out the calls to hello() in both tests and re-run. Do they both fail? If not, why not?
-    # hello()
+    hello()
     with open('hello.txt') as file:
         text = file.read()
     assert text == 'Hello World!\n'
