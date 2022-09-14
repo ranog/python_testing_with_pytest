@@ -1,4 +1,5 @@
 import pytest
+
 from cards import Card
 
 
